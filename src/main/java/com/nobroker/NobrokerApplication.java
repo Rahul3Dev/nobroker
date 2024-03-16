@@ -11,9 +11,9 @@ public class NobrokerApplication {
     public static void main(String[] args) {
         SpringApplication.run(NobrokerApplication.class, args);
     }
-
     @Bean
-    public ModelMapper modelMapper() {
-        return modelMapper();
+    public ModelMapper modelMapper(){
+        return new ModelMapper();
     }
+
 }
